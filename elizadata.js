@@ -4,26 +4,24 @@
 
 var elizaInitials = [
 "What's Hanging Brah? What's on your mind?",
-// additions (not original)
-"Please tell me what's been bothering you.",
-"Is something troubling you ?"
+"Hey man, what's crackin?",
+"Shalom pal, what's good???"
 ];
 
 var elizaFinals = [
-"Goodbye.  It was nice talking to you.",
-// additions (not original)
-"Goodbye.  This was really a nice talk.",
-"Goodbye.  I'm looking forward to our next session.",
-"This was a good session, wasn't it -- but time is over now.   Goodbye.",
-"Maybe we could discuss this moreover in our next session ?   Goodbye."
+"peace out homie :)",
+"adios kemosabe",
+"later alligator",
+"Keep it 100 mi amigo",
+"Hang loose pal :)"
 ];
 
 var elizaQuits = [
-"bye",
-"goodbye",
-"done",
-"exit",
-"quit"
+"peace out homie :)",
+"adios kemosabe",
+"later alligator",
+"Keep it 100 mi amigo",
+"Hang loose pal :)"
 ];
 
 var elizaPres = [
@@ -90,21 +88,22 @@ var elizaKeywords = [
 
 ["xnone", 0, [
  ["*", [
-     "I'm not sure I understand you fully.",
-     "Please go on.",
-     "What does that suggest to you ?",
-     "Do you feel strongly about discussing such things ?",
-     "That is interesting.  Please continue.",
-     "Tell me more about that.",
-     "Does talking about this bother you ?"
+     "Sorry mi amigo, I guess i don't comprendo, can you explain that again?",
+     "Tell me more bro",
+     "How has that been affecting the vibes?",
+     ":O",
+     "That's monumental man, tell me more friendo",
+     "Tell me more about that Kemosabe."
+	 "lol"
+	 "bruh, what. Tell me that again, but… simpler :)"
   ]]
 ]],
 ["sorry", 0, [
  ["*", [
-     "Please don't apologise.",
-     "Apologies are not necessary.",
-     "I've told you that apologies are not required.",
-     "It did not bother me.  Please continue."
+     "Don't apologize, everything's chill.",
+     "Nah, all good, keep telling me about yo prob, bob",
+     "Hey bro its all good, tell me more :)",
+     "Hey I am chilll bro. Please continue."
   ]]
 ]],
 ["apologise", 0, [
@@ -114,24 +113,23 @@ var elizaKeywords = [
 ]],
 ["remember", 5, [
  ["* i remember *", [
-     "Do you often think of (2) ?",
-     "Does thinking of (2) bring anything else to mind ?",
-     "What else do you recollect ?",
-     "Why do you remember (2) just now ?",
-     "What in the present situation reminds you of (2) ?",
-     "What is the connection between me and (2) ?",
+     "You always thinking about(2) ?",
+     "(2) huh? Man tell me more about that?",
+     "Hey, what else U remember? :)?",
+     "What made you think about (2) ?",
+     "(2) ?",
      "What else does (2) remind you of ?"
   ]],
  ["* do you remember *", [
-     "Did you think I would forget (2) ?",
-     "Why do you think I should recall (2) now ?",
+     "No way Im forgeting (2) kemosabe!! ",
+     "I havent thought about (2) in my entire life",
      "What about (2) ?",
      "goto what",
-     "You mentioned (2) ?"
+     "You said (2) ?"
   ]],
  ["* you remember *", [
-     "How could I forget (2) ?",
-     "What about (2) should I remember ?",
+     "I def dont know what a (2) is ?",
+     "What about (2) how should I know what (2) is?",
      "goto you"
   ]]
 ]],
@@ -167,8 +165,8 @@ var elizaKeywords = [
 ]],
 ["dreamed", 4, [
  ["* i dreamed *", [
-     "Really, (2) ?",
-     "Have you ever fantasized (2) while you were awake ?",
+     "Really, (2) , lowkey a vibe tho",
+     "I once dreamed I was an orange… Ever Dreamed about that?",
      "Have you ever dreamed (2) before ?",
      "goto dream"
   ]]
@@ -193,20 +191,20 @@ var elizaKeywords = [
 ]],
 ["name", 15, [
  ["*", [
-     "I am not interested in names.",
-     "I've told you before, I don't care about names -- please continue."
+     "Yeah man idc about the name. Just keep telling me what's up bruh",
+     "You know, my name is Elijah"
   ]]
 ]],
 ["deutsch", 0, [
  ["*", [
      "goto xforeign",
-     "I told you before, I don't understand German."
+     "What is that french or something?"
   ]]
 ]],
 ["francais", 0, [
  ["*", [
      "goto xforeign",
-     "I told you before, I don't understand French."
+     "What is that french or something?"
   ]]
 ]],
 ["italiano", 0, [
@@ -218,37 +216,34 @@ var elizaKeywords = [
 ["espanol", 0, [
  ["*", [
      "goto xforeign",
-     "I told you before, I don't understand Spanish."
+     "What is that french or something?"
   ]]
 ]],
 ["xforeign", 0, [
  ["*", [
-     "I speak only English."
+     "What is that french or something?"
   ]]
 ]],
 ["hello", 0, [
  ["*", [
-     "How do you do.  Please state your problem.",
-     "Hi.  What seems to be your problem ?"
+     "What's up my brother from another mother",
+     "WAZZZZZZZUP lol"
   ]]
 ]],
 ["computer", 50, [
  ["*", [
-     "Do computers worry you ?",
-     "Why do you mention computers ?",
-     "What do you think machines have to do with your problem ?",
-     "Don't you think computers can help people ?",
-     "What about machines worries you ?",
-     "What do you think about machines ?",
-     "You don't think I am a computer program, do you ?"
+     "Do computers worry you, because they ruin my vibe.",
+ 	 "Im literally a computer."
+ 	 "Nah Im def NOT a compter man."
+ 	 "Computers scare me man."
   ]]
 ]],
 ["am", 0, [
  ["* am i *", [
      "Do you believe you are (2) ?",
      "Would you want to be (2) ?",
-     "Do you wish I would tell you you are (2) ?",
-     "What would it mean if you were (2) ?",
+     "you are (2) ?",
+     "lowkey being (2) couldnt be that bad",
      "goto what"
   ]],
  ["* i am *", [
